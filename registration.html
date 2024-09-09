@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                    <img class="h-8 w-auto" src="ched.png" alt="CHED Logo">
+                  </div>
+                </div>
+
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Login</button>
+                    <button type="button" class="rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Register</button>
+                </div>
+                
+              </div>
+            </div>
+        </nav>
+          
+    </header>
+ 
+    <main class="w-full flex flex-col justify-center space-y-4 pt-10">
+        <header class="flex justify-center">
+          <ol class="hidden lg:flex items-center w-content lg:max-w-7xl p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4 rtl:space-x-reverse">
+            <li class="flex items-center text-blue-600 dark:text-blue-500">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-blue-600 rounded-full shrink-0 dark:border-blue-500">
+                    1
+                </span>
+                Personal <span class="hidden sm:inline-flex sm:ms-2">Info</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    2
+                </span>
+                Complete <span class="hidden sm:inline-flex sm:ms-2">Address</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    3
+                </span>
+                Family <span class="hidden sm:inline-flex sm:ms-2">Background</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    4
+                </span>
+                Education <span class="hidden sm:inline-flex sm:ms-2">Details</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    5
+                </span>
+                Account <span class="hidden sm:inline-flex sm:ms-2">Setup</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    6
+                </span>
+                Confirmation
+            </li>
+          </ol>
+
+          <div class="grid grid-cols-3 lg:hidden px-5">
+              <!-- Circular Progress -->
+                <div class="relative size-40 col-span-1">
+                  <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="2"></circle>
+                    <!-- Progress Circle -->
+                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600 dark:text-blue-500" stroke-width="2" stroke-dasharray="16.666, 100" stroke-dashoffset="0" stroke-linecap="round"></circle>
+                  </svg>
+
+                  <!-- Percentage Text -->
+                  <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                    <span class="text-center text-2xl font-bold text-gray-900">1 of 6</span>
+                  </div>
+                </div>
+              <!-- End Circular Progress -->
+
+                <div class="grid grid-cols-none col-span-2">
+                  <h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl content-center text-gray-900">PERSONAL INFORMATION</h2>
+                  <p class="text-sm md:text-base font-light flex justify-end">Next:<span class="font-medium ml-1"> COMPLETE ADDRESS</span></p>
+                </div>
+          </div>
+          
+
+        </header>
+        <section>
+          <form class="lg:max-w-3xl lg:mx-auto bg-gray-600 p-5 w-full lg:rounded-md" >
+            <div class="col-span-2 lg:text-center mb-5 ">
+              <p class="text-white text-2xl font-bold ">Personal Information</p>
+              <hr >
+            </div >
+            
+            <div class="mb-5">
+              <label for="firstName" class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">First Name </label>
+              <input type="text" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Windill Veer" required />
+            </div>
+            <div class="mb-5">
+              <label for="middleName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Middle Name </label>
+              <input type="text" id="middleName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Chua" required />
+            </div>
+            <div class="mb-5">
+              <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name </label>
+              <input type="text" id="lastName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan" required />
+            </div>
+            <div class="mb-5">
+              <label for="nameExtension" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name Extension <span class="text-xs text-gray-400"> (Optional)</span></label>
+              <select name="nameExtension" id="nameExtension"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option value="N/A" selected>Name Extension</option>
+                <option value="Jr.">Jr.</option>
+                <option value="Sr.">Sr.</option>
+                <option value="III">III</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <label for="birthday" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Birth </label>
+              <input type="date" id="birthday" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+            <div class="mb-5">
+              <label for="birthPlace" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Place of Birth </label>
+              <input type="text" id="birthPlace" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Bacolod City" required />
+            </div>
+            <div class="mb-5">
+              <label for="civilStatus" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civil Status </label>
+              <select name="civil_status" id="civilStatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                <option value="" disabled selected>Choose your civil status</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Annulled">Annuled</option>
+                <option value="Widowed">Widowed</option>
+                <option value="Separated">Separated</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col mb-10 text-white">
+              <label for="male" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
+              <div class="flex  space-x-4">
+                <div>
+                  <input type="radio" name="sex" id="male" value="Male" required> 
+                    <label for="male">Male</label>  
+                </div>
+                <div>
+                  <input type="radio" name="sex" id="female" value="Female"> 
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              
+            </div>
+                <!--
+                  <div class="mb-5">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                  </div>
+                -->
+            <div class="lg:grid lg:grid-cols-5 flex flex-col-reverse">
+              <div>
+                <button type="button" class=" text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-gray-500 dark:hover:bg-gray-700 dark:focus:ring-gray-800 lg:col-span-2"><- Previous</button>
+              </div>
+              <div class="hidden lg:block lg:col-span-3 ">
+
+              </div>
+              <div>
+                <button type="button" class="mb-3 lg:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 lg:col-span-2">Next -></button>
+              </div>
+            </div>
+          </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    -->
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body >
+    <header class="lg:sticky lg:top-0">
+        <nav class="bg-gray-800 ">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                    <img class="h-8 w-auto" src="ched.png" alt="CHED Logo">
+                  </div>
+                </div>
+
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Login</button>
+                    <button type="button" class="rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Register</button>
+                </div>
+                
+              </div>
+            </div>
+        </nav>
+          
+    </header>
+ 
+    <main class="w-full lg:grid lg:grid-cols-4 flex flex-col justify-center max-w-7xl lg:mx-auto ">
+        <header class="flex justify-center lg:col-span-1 lg:fixed lg:mt-24">
+          <ol class="hidden space-y-4 lg:block text-gray-500  ">                  
+            <li>
+              <div class="w-full p-4 text-green-700 border border-green-300 rounded-lg bg-green-50 " role="alert">
+                  <div class="flex items-center justify-between">
+                      <span class="sr-only">Personal Info</span>
+                      <h3 class="font-medium">1. Personal info</h3>
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                      </svg>
+                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="w-full p-4 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg " role="alert">
+                  <div class="flex items-center justify-between">
+                      <span class="sr-only">Address</span>
+                      <h3 class="font-medium">2. Address</h3>
+                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="w-full p-4 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg " role="alert">
+                  <div class="flex items-center justify-between">
+                      <span class="sr-only">Family</span>
+                      <h3 class="font-medium">3. Family</h3>
+                  </div>
+              </div>
+            </li>
+            <li>
+                <div class="w-full p-4 text-blue-700 bg-blue-100 border border-blue-300 rounded-lg " role="alert">
+                    <div class="flex items-center justify-between">
+                        <span class="sr-only">Education</span>
+                        <h3 class="font-medium">4. Education</h3>
+                        <svg class="rtl:rotate-180 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="w-full p-4 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg " role="alert">
+                    <div class="flex items-center justify-between">
+                        <span class="sr-only">Account Setup</span>
+                        <h3 class="font-medium">5. Account Setup</h3>
+                    </div>
+                </div>
+            </li>
+                <li>
+                <div class="w-full p-4 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg " role="alert">
+                    <div class="flex items-center justify-between">
+                        <span class="sr-only">Confirmation</span>
+                        <h3 class="font-medium">6. Confirmation</h3>
+                    </div>
+                </div>
+            </li>
+          </ol>
+
+          <div class="grid grid-cols-3 lg:hidden px-5">
+              <!-- Circular Progress -->
+                <div class="relative size-40 col-span-1">
+                  <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="2"></circle>
+                    <!-- Progress Circle -->
+                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600 dark:text-blue-500" stroke-width="2" stroke-dasharray="16.666, 100" stroke-dashoffset="0" stroke-linecap="round"></circle>
+                  </svg>
+
+                  <!-- Percentage Text -->
+                  <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                    <span class="text-center text-2xl font-bold text-gray-900">1 of 6</span>
+                  </div>
+                </div>
+              <!-- End Circular Progress -->
+
+                <div class="grid grid-cols-none col-span-2">
+                  <h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl content-center text-gray-900">PERSONAL INFORMATION</h2>
+                  <p class="text-sm md:text-base font-light flex justify-end">Next:<span class="font-medium ml-1"> COMPLETE ADDRESS</span></p>
+                </div>
+          </div>
+          
+
+        </header>
+
+        <section class="lg:col-span-3 lg:col-start-2 shadow-2xl lg:overflow-y-auto">
+          <form class="lg:max-w-full lg:mx-auto bg-gray-100 p-5 w-full lg:rounded-md " >
+            <div class="col-span-2 lg:text-center mb-5 ">
+              <p class="text-gray-900 text-2xl font-bold ">Personal Information</p>
+              <hr >
+            </div >
+            
+            <div class="mb-5">
+              <label for="firstName" class="block mb-2 text-sm font-semibold text-gray-900 ">First Name </label>
+              <input type="text" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Windill Veer" required />
+            </div>
+            <div class="mb-5">
+              <label for="middleName" class="block mb-2 text-sm font-medium text-gray-900 ">Middle Name </label>
+              <input type="text" id="middleName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Chua" required />
+            </div>
+            <div class="mb-5">
+              <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900 ">Last Name </label>
+              <input type="text" id="lastName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Juan" required />
+            </div>
+            <div class="mb-5">
+              <label for="nameExtension" class="block mb-2 text-sm font-medium text-gray-900 ">Name Extension</label>
+              <select name="nameExtension" id="nameExtension"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                <option selected hidden>Name Extension</option>
+                <option value="N/A">Not Applicable</option>
+                <option value="Jr.">Jr.</option>
+                <option value="Sr.">Sr.</option>
+                <option value="III">III</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <label for="birthday" class="block mb-2 text-sm font-medium text-gray-900 ">Date of Birth </label>
+              <input type="date" id="birthday" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required />
+            </div>
+            <div class="mb-5">
+              <label for="birthPlace" class="block mb-2 text-sm font-medium text-gray-900 ">Place of Birth </label>
+              <input type="text" id="birthPlace" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Bacolod City" required />
+            </div>
+            <div class="mb-5">
+              <label for="civilStatus" class="block mb-2 text-sm font-medium text-gray-900 ">Civil Status </label>
+              <select name="civil_status" id="civilStatus" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                <option value="" disabled selected>Choose your civil status</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Annulled">Annuled</option>
+                <option value="Widowed">Widowed</option>
+                <option value="Separated">Separated</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col mb-10">
+              <label class="block mb-2 text-sm font-medium text-gray-900 ">Sex</label>
+              <ul class="grid w-full gap-4 md:grid-cols-2">
+                <li>
+                    <input type="radio" id="hosting-small" name="sex" value="Male" class="hidden peer" required />
+                    <label for="hosting-small" class="inline-flex items-center justify-between w-full p-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer  peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 ">                           
+                        <div class="block">
+                            <div class="w-full text-md font-medium">Male</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="hosting-big" name="sex" value="Female" class="hidden peer">
+                    <label for="hosting-big" class="inline-flex items-center justify-between w-full p-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer  peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 ">
+                        <div class="block">
+                            <div class="w-full text-md font-medium">Female</div>
+                        </div>
+                       
+                    </label>
+                </li>
+            </ul>
+              
+            </div>
+                        
+            
+
+                <!--
+                  <div class="mb-5">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Your password</label>
+                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required />
+                  </div>
+                -->
+            <div class="lg:grid lg:grid-cols-5 flex flex-col-reverse">
+              <div>
+                <button type="button" class=" text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-gray-500 dark:hover:bg-gray-700 dark:focus:ring-gray-800 lg:col-span-2"><- Previous</button>
+              </div>
+              <div class="hidden lg:block lg:col-span-3 ">
+
+              </div>
+              <div>
+                <button type="button" class="mb-3 lg:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 lg:col-span-2">Next -></button>
+              </div>
+            </div>
+          </form>
+        </section>
+    </main>
+
+    
+
+<!-- Modal toggle -->
+<button data-modal-target="static-modal" data-modal-toggle="static-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center " type="button">
+  Qualifications
+</button>
+
+<!-- Main modal -->
+<div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
+                <h3 class="text-xl font-semibold text-gray-900 ">
+                    Must Read!
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="static-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="mb-4 border-b border-gray-200">
+              <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                  <li class="me-2" role="presentation">
+                      <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                  </li>
+                  <li class="me-2" role="presentation">
+                      <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+                  </li>
+                  <li class="me-2" role="presentation">
+                      <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                  </li>
+                  <li role="presentation">
+                      <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+                  </li>
+              </ul>
+            </div>
+            <div id="default-tab-content">
+              <div class="hidden p-4 rounded-lg bg-gray-50 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <p class="text-sm text-gray-500 ">This is some placeholder content the <strong class="font-medium text-gray-800 ">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-4 rounded-lg bg-gray-50 " id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                  <p class="text-sm text-gray-500 ">This is some placeholder content the <strong class="font-medium text-gray-800 ">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-4 rounded-lg bg-gray-50 " id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                  <p class="text-sm text-gray-500 ">This is some placeholder content the <strong class="font-medium text-gray-800 ">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-4 rounded-lg bg-gray-50 " id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                  <p class="text-sm text-gray-500 ">This is some placeholder content the <strong class="font-medium text-gray-800 ">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="static-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">I accept</button>
+                <button data-modal-hide="static-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 ">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer>
+
+    </footer>
+    <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    -->
+    <script>
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>
